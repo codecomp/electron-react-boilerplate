@@ -1,0 +1,24 @@
+{
+  "name": "electron-react-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for Electron and React using Webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Codecomp@github.com/codecomp/electron-react-boilerplate.git"
+  },
+  "keywords": [
+    "electron",
+    "react",
+    "webpack"
+  ],
+  "author": "Chris Morris",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codecomp/electron-react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/codecomp/electron-react-boilerplate#readme"
+}
