@@ -1,0 +1,59 @@
+/*
+ * Global constants goes here
+ */
+:root {
+    --primary-color: #5781F6;
+}
+
+/*
+ * Global CSS goes here, it requires to use :global before each style
+ */
+:global html {
+    height: 100%;
+}
+
+:global body {
+    height: 100%;
+    margin: auto;
+}
+
+:global :not(input):not(textarea):not(a),
+:global :not(input):not(textarea):not(a)::after,
+:global :not(input):not(textarea):not(a)::before {
+    /* Set cursor to default over all non interactive elements */
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+:global input,
+:global button,
+:global textarea,
+:global :focus {
+    outline: none; /* You should add some other style for :focus to help UX/a11y */
+}
+
+@keyframes :global(fadein) {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+:global #app {
+    /* Disable text selection, or your app will feel like a web page */
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+
+    /* Cover the whole window */
+    height: 100%;
+
+    /* Make sure this matches the native window background color that you pass to
+     * electron.BrowserWindow({...}), otherwise your app startup will look janky. */
+    background: #FBFBFB;
+
+    /* Smoother startup */
+    animation: fadein 0.5s;
+}
